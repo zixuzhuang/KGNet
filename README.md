@@ -66,6 +66,7 @@ After preparing the data, you can construct the knee graph representation using 
   ```
 
 **C. Multi-Task Pre-Training**
+
 To pre-train the model, use the following command.
 
 - **For MRNet Dataset:**
@@ -78,6 +79,7 @@ To pre-train the model, use the following command.
   ```
 
 **D. Downstream Diagnosis Fine-Tuning**
+
 After pre-training, you can fine-tune the model for knee disease diagnosis using the commands below:
 
 - **For MRNet Dataset:**
