@@ -1,0 +1,19 @@
+path : data/graph_mrnet_example/sag
+result : results
+index_folder : data/fold_mrnet_example
+num_cls : 2
+views: sag,sag,sag
+
+# Training Settings
+num_workers : 2
+bs : 2
+num_epoch : 20
+
+# Optimizer settings
+lr : 3.0e-5
+weight_decay : 1.0e-4
+
+# Model Settings
+task : finetune_mrnet
+input_size : 64
+net : KGNet
