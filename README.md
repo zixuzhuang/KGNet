@@ -39,12 +39,15 @@ pip install -r requirements.txt
 - **For MRNet Dataset:**
     To begin, download the preprocessed MRNet dataset from [here](https://stanfordmlgroup.github.io/competitions/mrnet/).
 
-    First, you need to convert the data from `.npy` matrices to NIfTI format using the following script:
+    The corresponding **segmentation masks** for the MRNet dataset can be downloaded from [here](https://drive.google.com/file/d/1f8f5XY9DNqopyk8yVgUwaCc81MU62ZQD/view?usp=sharing).
+
+    You need to convert the data from `.npy` matrices to NIfTI format using the following script:
     ```bash
     python convert_mrnet_to_nii.py --mrnet_file "data/npy_mrnet_example/0001/sag_org.npy" --ref_file "data/nifti_inhouse_example/00001/sag_org.nii.gz" --view "sag" --save_path "data/nifti_mrnet_example/0001_sag/sag_org.nii.gz"
     ```
+    Put the converted NIfTI files in the `data/nifti_mrnet_example/` folder, and rename each MRI file as `<view>_org.nii.gz` and segmentation as `<view>_seg.nii.gz`_sag`.
 
-    The corresponding segmentation masks for the MRNet dataset can be downloaded from [here](https://ourgoogle_drive/mrnet/).
+    
 
 - **For In-House Dataset:**
 
