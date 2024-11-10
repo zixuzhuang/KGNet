@@ -52,7 +52,7 @@ pip install -r requirements.txt
 - **For In-House Dataset:**
 
     The in-house dataset is still under preparation for open-source release. 
-    For now, an anonymized dataset is available under the folder `data/nifti_inhouse_example/` for demonstration purposes.
+    For now, an anonymized of it is available under the folder `data/nifti_inhouse_example/` for demonstration purposes.
 
 **B. Graph Construction**
 
