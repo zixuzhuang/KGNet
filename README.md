@@ -16,7 +16,7 @@ In conclusion, our framework demonstrates the potential of enhancing knee diseas
 ## Visualized Multi-View and Multi-Task Results
 <img src="figures/pretrain_results.png" alt="Visualized Results" width="60%" />
 
-## Usage and Installation
+## Installation and Usage 
 To set up the environment for this project, we recommend using Conda for managing dependencies. 
 
 The following steps will guide you through the installation process:
@@ -68,7 +68,7 @@ After preparing the data, you can construct the knee graph representation using 
   python construct_graph.py --subject_folder "data/nifti_inhouse_example/00001" --bone_index "1,4,6" --main_view "sag" --save_path "data/graph_inhouse_example/00001.npz"
   ```
 
-**C. Multi-Task Pre-Training**
+### 3. **Multi-Task Pre-Traing**
 
 To pre-train the model, use the following command.
 
@@ -81,7 +81,7 @@ To pre-train the model, use the following command.
   CUDA_VISIBLE_DEVICES=0 python pretrain.py --fold 0 --config_file config/pretrain_inhouse.yaml --dataset inhouse 
   ```
 
-**D. Downstream Diagnosis Fine-Tuning**
+### 4. **Downstream Diagnosis Fine-Tuningg**
 
 After pre-training, you can fine-tune the model for knee disease diagnosis using the commands below:
 
