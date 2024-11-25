@@ -26,10 +26,10 @@ Make sure you have Conda installed on your system. Then, run the following comma
 ```bash
 conda create --name KGNet python=3.10
 conda activate KGNet
-# Install PyTorch (adjust CUDA version as needed, e.g., 11.7)
-conda install cudatoolkit=11.7 -c pytorch -c nvidia
-# Install additional packages from requirements.txt
+# Install CUDA and other packages (adjust CUDA version as needed, e.g., 11.7)
+conda install nvidia/label/cuda-11.7.1::cuda-toolkit
 pip install -r requirements.txt
+pip install dgl==1.0.2+cu117 -f https://data.dgl.ai/wheels/cu117/repo.html
 ```
 **Note**: Make sure to adjust the CUDA version (cudatoolkit=11.7) to match your system's configuration.
 

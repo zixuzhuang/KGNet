@@ -5,7 +5,7 @@ import time
 import torch
 from einops import rearrange
 
-import wandb
+# import wandb
 from CSNet.dataloader_ import CSNetData
 from utils.utils import mkdirs
 from utils.utils_img import ImagePrinter, show_seg, show_slices

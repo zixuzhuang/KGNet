@@ -78,7 +78,7 @@ class Result(object):
         log_text = []
         log_text.append(f"\nEVAL TIME: {self.time:.1f}s")
         log_text.append(f"LOSS: {loss:.3f}")
-        wandb.log({"test_loss": loss}, step=epoch)
+        # wandb.log({"test_loss": loss}, step=epoch)
         if loss < self.best_result:
             self.best_epoch = epoch
             self.best_result = loss
