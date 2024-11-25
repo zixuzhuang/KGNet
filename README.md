@@ -27,7 +27,7 @@ Make sure you have Conda installed on your system. Then, run the following comma
 conda create --name KGNet python=3.10
 conda activate KGNet
 # Install PyTorch (adjust CUDA version as needed, e.g., 11.7)
-conda install pytorch torchvision torchaudio cudatoolkit=11.7 -c pytorch -c nvidia
+conda install cudatoolkit=11.7 -c pytorch -c nvidia
 # Install additional packages from requirements.txt
 pip install -r requirements.txt
 ```
