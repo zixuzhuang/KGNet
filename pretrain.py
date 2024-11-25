@@ -69,7 +69,7 @@ if __name__ == "__main__":
     net = KneeGraphNetwork()
     net.load_pretrain(cfg.ckpt)
     net = net.to(cfg.device)
-    lossfunc = KneeLoss(cfg.device)
+    lossfunc = KneeLoss(cfg.device, args.dataset)
     optimizer = optim.Adam(net.parameters(), lr=cfg.lr)
     scheduler = CosineAnnealingLR(optimizer, cfg.num_epoch, 1e-8)
     result = Result(num_seg=8, save_path=cfg.log_dir)
